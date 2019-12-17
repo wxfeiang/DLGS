@@ -1,0 +1,35 @@
+//  rem 计算方法
+@function rem($px)
+    $rem: 75px
+    @return ($px / $rem)+rem
+
+.a
+  width: rem(400px)
+  height: rem(88px)
+  background: #1890ff
+.b
+  width: rem(750px)
+  height: rem(88px)
+  background: red
+
+.footbtn
+  position: fixed
+  left: 0
+  bottom: 0
+  width: 100%
+  height: rem(110px)
+  border-top: 1px solid #e6e6e6
+  span
+    display: block
+    margin: rem(16px) auto
+    width: rem(670px)
+    height: ren(80)
+    background-color: #2b91f1
+    border-radius: 10px
+    text-align: center
+    line-height: rem(80px)
+    font-size: 0.30rem
+    font-weight: normal
+    font-stretch: normal
+    letter-spacing: 2.4px
+    color: #fff

@@ -1,0 +1,36 @@
+.a {
+  width: 5.33333rem;
+  height: 1.17333rem;
+  background: #1890ff;
+}
+
+.b {
+  width: 10rem;
+  height: 1.17333rem;
+  background: red;
+}
+
+.footbtn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.46667rem;
+  border-top: 1px solid #e6e6e6;
+}
+
+.footbtn span {
+  display: block;
+  margin: 0.21333rem auto;
+  width: 8.93333rem;
+  height: ren(80);
+  background-color: #2b91f1;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.06667rem;
+  font-size: 0.30rem;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 2.4px;
+  color: #fff;
+}

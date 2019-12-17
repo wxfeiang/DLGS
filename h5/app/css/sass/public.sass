@@ -1,0 +1,134 @@
+//  rem 计算方法
+@function rem($px)
+    $rem: 75px
+    @return ($px / $rem)+rem
+
+//首页
+.dy_conts
+  position: relative
+.tab_a
+  display: flex
+  height: rem(46px*2)
+  a
+    display: block
+    width: 50%
+    text-align: center
+    font-size: rem(30px)
+    height: rem(46px*2)
+    line-height: rem(46px*2)
+    background: #fff
+    &.active
+      border-bottom: 1px solid #1890ff
+      color: #1890ff
+.tab_conts
+  background-color: #f2f2f2
+  top: rem(180px)
+  padding: 0 0 rem(100px) 0
+
+.list_box
+  box-sizing: border-box
+  .list_item
+    display: flex
+    padding: rem(40px) rem(10px)
+    box-sizing: border-box
+    border-bottom: 1px solid #ccc
+    background-color: rgba(24, 144, 255, 0.0470588235294118)
+    .l_left
+      width: rem(90px)
+      text-align: center
+      img
+        width: rem(24px*2)
+        height: rem(24px*2)
+    .l_right
+      width: 86%
+      h3
+        font-size: rem(17px*2)
+        line-height: rem(50px)
+        span
+          float: right
+          font-size: rem(14px*2)
+          color: #999
+      .l_conts
+        padding: rem(10px) 0
+        font-size: rem(14px*2)
+        color: #666
+        line-height: rem(36px)
+      p
+        font-size: rem(14px*2)
+        color: #999
+        line-height: rem(46px)
+      a
+        font-size: rem(14px*2)
+        color: #FAAD14
+        line-height: rem(46px)
+        &.success
+          color: #09BB07
+        &.error
+          color: red
+
+//  搜索 项目模块
+.dy_serch
+  padding: rem(10px) rem(20px)
+  background: #fff
+  input, .mui-input-clear
+    margin: 0
+    background: #f2f2f2
+  .mui-placeholder
+    line-height: 44px
+  .mui-search:before
+    top: 50%
+.obj_item
+  box-sizing: border-box
+  margin: rem(20px)
+  padding: rem(20px) 0
+  border-radius: 4px
+  background: #fff
+  .top_obj
+    display: flex
+    .o_left
+      width: rem(124px)
+      text-align: center
+      height: rem(120px)
+      line-height: rem(120px)
+      img
+        width: rem(32px*2)
+        height: rem(32px*2)
+
+    .o_right
+      width: 85%
+      h3
+        font-size: rem(34px)
+        line-height: rem(50px)
+        font-weight: bold
+        color: #1890ff
+      .leb
+        margin-top: rem(15px)
+        display: flex
+        a
+          display: block
+          font-size: rem(24px)
+          line-height: rem(50px)
+          text-align: center
+          padding: 0 rem(20px)
+          background: #d0e9ff
+          margin-right: rem(15px)
+          border-radius: 4px
+  .time
+    padding: 0 0 0 rem(40px)
+    font-size: rem(30px)
+    line-height: rem(70px)
+    color: #666
+  .dy_pro
+    padding: 0 rem(40px)
+    .pro_dec
+      span
+        font-size: rem(30px)
+        line-height: rem(40px)
+        margin: 0 rem(20px) 0  0
+        b
+          color: #FAAD14
+      .rouse
+        margin: 0
+        float: right
+    .dy_progressbar
+      margin: rem(15px) 0 0  0
