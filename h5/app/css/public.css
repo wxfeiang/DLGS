@@ -190,3 +190,126 @@
 .obj_item .dy_pro .dy_progressbar {
   margin: 0.2rem 0 0 0;
 }
+
+.obj_table_a {
+  display: flex;
+  overflow-x: auto;
+  padding: 0.26667rem;
+  height: 1.38667rem;
+  background: #fff;
+}
+
+.obj_table_a a {
+  display: block;
+  padding: 0 0.13333rem;
+  margin-right: 0.26667rem;
+  min-width: 1.54667rem;
+  height: 0.72rem;
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.36rem;
+}
+
+.obj_table_a a.active {
+  background: #1890ff;
+  color: #fff;
+}
+
+.dy_cell {
+  margin: 0.26667rem 0 0 0;
+}
+
+.dy_cell li {
+  color: #333;
+}
+
+.dy_cell li span {
+  float: right;
+}
+
+.week_tab {
+  display: flex;
+  margin: 0.26667rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.week_tab .tab_list {
+  display: block;
+  width: 50%;
+  text-align: center;
+  background: #fff;
+  font-size: 0.53333rem;
+  line-height: 1.70667rem;
+  color: #333;
+}
+
+.week_tab .tab_list span {
+  padding: 0 0.13333rem;
+  font-size: 0.46667rem;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.week_tab .tab_list .week {
+  background: #1bc293;
+}
+
+.week_tab .tab_list .month {
+  background: #1890ff;
+}
+
+.tab_item_box {
+  padding: 0 0 1.33333rem 0;
+}
+
+.dy_card {
+  box-shadow: none;
+}
+
+.dy_card h3 {
+  padding: 0 0 0 0.33333rem;
+  font-size: 0.4rem;
+  line-height: 1.28rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.dy_card li {
+  color: #333;
+}
+
+.dy_card li span {
+  float: right;
+}
+
+.my_info_body {
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+.my_info {
+  background: #1890ff;
+  padding: 0.53333rem 0 0 0;
+  text-align: center;
+}
+
+.my_info .name {
+  font-size: 0.46667rem;
+  line-height: 1.33333rem;
+  color: #fff;
+}
+
+.my_info img {
+  display: block;
+  margin: 0 auto;
+  width: 1.22667rem;
+  height: 1.22667rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.dy_chege {
+  color: #1890ff;
+}
