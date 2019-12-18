@@ -12,7 +12,7 @@
   width: 50%;
   text-align: center;
   font-size: 0.4rem;
-  height: 1.22667rem;
+  height: 1.06667rem;
   line-height: 1.22667rem;
   background: #fff;
 }
@@ -282,6 +282,96 @@
 
 .dy_card li span {
   float: right;
+}
+
+.dy_from {
+  background: none;
+}
+
+.dy_from .dy_input_right input {
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.dy_from .dy_select_input span {
+  float: right;
+  margin: 0 0.46667rem 0 0;
+}
+
+.file_box {
+  margin: 0.26667rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.file_box .file_btn {
+  position: relative;
+  list-style: none;
+  width: 1.86667rem;
+  height: 1.6rem;
+  border-radius: 4px;
+  border: 1px dashed #1890ff;
+}
+
+.file_box .file_btn .after {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  color: #1890ff;
+}
+
+.file_box .file_btn input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.file_box .file_list {
+  width: 100%;
+  height: 1.06667rem;
+  margin: 0 0 0.26667rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.file_box .file_list a {
+  font-size: 0.53333rem;
+  color: #1890ff;
+  line-height: 1.06667rem;
+}
+
+.file_box .file_list span {
+  line-height: 1.06667rem;
+  color: #666;
+}
+
+.file_box .img_box {
+  position: relative;
+  margin: 0 0.26667rem 0.26667rem 0;
+  width: 1.86667rem;
+  height: 1.6rem;
+}
+
+.file_box .img_box img {
+  width: 100%;
+  height: 100%;
+}
+
+.file_box .img_box span {
+  position: absolute;
+  top: -0.13333rem;
+  right: -0.13333rem;
+  color: #666;
+}
+
+.dy_tijiao {
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 50px;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
 }
 
 .my_info_body {

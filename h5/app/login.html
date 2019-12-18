@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello MUI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="stylesheet" href="css/iconfont.css" />
+  <link rel="stylesheet" href="css/rest.css">
+  <script src="js/remScale.js"></script>
+  <style>
+    .login {
+      width: 100%;
+      height: 100%;
+      background: #1890ff;
+      background-size: cover;
+      position: fixed;
+      z-index: -10;
+      background-image: linear-gradient(90deg,
+          #0076f8 0%,
+          #35bffe 100%),
+        linear-gradient(#0d92ff,
+          #0d92ff);
+      background-blend-mode: normal,
+        normal;
+    }
+
+    .welcome {
+      width: 100%;
+      margin: 25% 0 10%;
+      text-align: center;
+      font-size: 40px;
+      color: #fff;
+    }
+
+    .welcome img {
+      width: 100%;
+    }
+
+    .login-inp {
+      margin: 0 30px 15px 30px;
+      border: 1px solid #fff;
+      border-radius: 25px;
+    }
+
+    .login-inp label {
+      width: 4em;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+    }
+
+    .login-inp input {
+      line-height: 40px;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+    .login-inp a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 5px;
+    }
+
+    .login-txt {
+      text-align: center;
+      color: #fff;
+    }
+
+    .login-txt a {
+      color: #fff;
+      padding: 0 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login">
+    <div class="welcome">welcome</div>
+    <div class="login-form">
+      <div class="login-inp"><label>登录</label><input type="text" placeholder=""></div>
+      <div class="login-inp"><label>密码</label><input type="password" placeholder=""></div>
+      <div class="login-inp"><a href="#">立即登录</a></div>
+    </div>
+
+  </div>
+
+
+
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/public.js"></script>
+
+
+</html>

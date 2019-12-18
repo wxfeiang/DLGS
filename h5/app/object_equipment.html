@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>项目设备管理</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="css/mui.min.css">
+  <link href="css/mui.poppicker.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+  <link rel="stylesheet" href="css/iconfont.css" />
+  <link rel="stylesheet" href="css/rest.css">
+  <link rel="stylesheet" href="css/public.css">
+  <script src="js/remScale.js"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header class="mui-bar mui-bar-nav dis-tit">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">我的测试项目</h1>
+  </header>
+  <!-- header end-->
+  <!-- contant -->
+  <div class="mui-content">
+    <!-- qiehuan  -->
+    <div class="obj_table_a">
+      <a href="object_type.html">
+        详情
+      </a>
+      <a href="#">
+        组织
+      </a>
+      <a href="#">
+        策划
+      </a>
+      <a href="object_plan.html">
+        进度
+      </a>
+      <a href="object_equipment.html" class="active">
+        设备
+      </a>
+    </div>
+    <div class="tab_item_box">
+      <div class=" list_box  ">
+        <form class="mui-input-group dy_from">
+          <div class="mui-card dy_card">
+            <h3>
+              设备信息
+            </h3>
+            <div class="mui-input-row ">
+              <label>设备型号</label>
+              <input type="text" class="mui-input-clear" placeholder="请输入设备型号">
+            </div>
+
+            <div class="mui-input-row ">
+              <label>设备名称</label>
+              <input type="text" class="mui-input-clear" placeholder="请输入设备名称">
+            </div>
+            <div class="mui-input-row ">
+              <label>数量</label>
+              <input type="text" class="mui-input-clear" placeholder="请输入数量">
+            </div>
+          </div>
+          <div class="mui-card dy_card">
+            <h3>
+              货运信息
+            </h3>
+            <div class="mui-table-view-cell" id="timer" data-options="{}">
+              <div class="mui-navigate-right dy_select_input">
+                实际到货时间
+                <span id="timer_sapn">请选择</span>
+                <input type="hidden" value="">
+              </div>
+            </div>
+            <div class="mui-input-row dy_input_right">
+              <label>催货记录</label>
+              <input type="text" placeholder="请输入">
+            </div>
+            <div class="mui-input-row dy_input_right">
+              <label>联系人</label>
+              <input type="text" placeholder="请输入设备型号">
+            </div>
+            <div class="mui-table-view-cell" id="space_picer">
+              <div class="mui-navigate-right dy_select_input" id="space">
+                规格书
+                <span>请选择</span>
+                <input type="hidden" value="">
+              </div>
+            </div>
+            <ul class="mui-table-view ">
+              <li class="mui-table-view-cell">
+                附件
+                <!-- 文件展示写法 -->
+                <div class="file_box">
+                  <!--  文件内容填充到按钮前面 -->
+                  <div class="file_list">
+                    <a class="mui-card-link">xxxxxxxxxx.word</a>
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+                  <div class="file_list">
+                    <a class="mui-card-link">xxxxxxxxxx.word</a>
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+                  <div class="file_list">
+                    <a class="mui-card-link">xxxxxxxxxx.word</a>
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+                  <div class="file_btn">
+                    <span class="mui-icon mui-icon-plusempty after"></span>
+                    <input type="file" class="file_btn">
+                  </div>
+                </div>
+                <!-- 图片展示 -->
+                <div class="file_box">
+                  <!--  文件内容填充到按钮前面 -->
+                  <div class="img_box">
+                    <img src="images/shuijiao.jpg" alt="">
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+                  <div class="img_box">
+                    <img src="images/shuijiao.jpg" alt="">
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+                  <div class="img_box">
+                    <img src="images/shuijiao.jpg" alt="">
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+                  <div class="img_box">
+                    <img src="images/shuijiao.jpg" alt="">
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+
+                  <div class="img_box">
+                    <img src="images/shuijiao.jpg" alt="">
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+
+                  <div class="img_box">
+                    <img src="images/shuijiao.jpg" alt="">
+                    <span class="mui-icon mui-icon-clear "></span>
+                  </div>
+
+                  <div class="file_btn">
+                    <span class="mui-icon mui-icon-plusempty after"></span>
+                    <input type="file" class="file_btn">
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button type="button" class="mui-btn mui-btn-primary mui-btn-block dy_tijiao">提交</button>
+
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!-- contant  end -->
+  <!-- footer -->
+  <nav class="mui-bar mui-bar-tab foot-nav dy-bar">
+    <a class="mui-tab-item mui-active">
+      <span class="mui-icon  iconfont icon-yemian"></span>
+      <span class="mui-tab-label span2">首页</span>
+    </a>
+    <a class="mui-tab-item" href="object.html">
+      <span class="mui-icon  iconfont icon-fenlei2-copy"></span>
+      <span class="mui-tab-label span2">项目</span>
+    </a>
+    <a class="mui-tab-item ">
+      <span class="mui-icon  iconfont icon-wodedangxuan1-copy"></span>
+      <span class="mui-tab-label span2">我的</span>
+    </a>
+
+  </nav>
+  <!-- footer  end-->
+
+
+
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script src="js/mui.min.js"></script>
+<script src="js/public.js"></script>
+<script src="js/mui.picker.js"></script>
+<script src="js/mui.poppicker.js"></script>
+<script src="js/mui.picker.min.js"></script>
+<script>
+  (function (mui, doc) {
+    mui.init();
+
+    var _getParam = function (obj, param) {
+      return obj[param] || '';
+    };
+    var userPicker = new mui.PopPicker();
+    userPicker.setData([{
+      value: '1',
+      text: '是'
+    }, {
+      value: '0',
+      text: '否'
+    }, ]);
+    var space_picer = doc.getElementById('space_picer');
+    space_picer.addEventListener('tap', function (event) {
+      userPicker.show(function (items) {
+        //userResult.innerText = JSON.stringify(items[0]);
+        //userResult.innerText = items[0].text;
+        $("#space ").removeClass("mui-navigate-right ")
+        $("#space span").css({
+          margin: "0"
+        }).html(items[0].text)
+        $("#space input").val(items[0].value)
+        //返回 false 可以阻止选择框的关闭
+        //return false;
+      });
+    }, false);
+
+
+    // 选择时间 timer1 $("#timer_sapn").html(rs.text)
+
+    var timer = doc.getElementById('timer');
+    timer.addEventListener('tap', function () {
+      var _self = this;
+      if (_self.picker) {
+        _self.picker.show(function (rs) {
+          $("#timer_sapn").css({
+            margin: "0"
+          }).html(rs.text)
+          $(this).find("input").val(rs.text)
+
+          _self.picker.dispose();
+          _self.picker = null;
+        });
+      } else {
+        var optionsJson = this.getAttribute('data-options') || '{}';
+        var options = JSON.parse(optionsJson);
+        var id = this.getAttribute('id');
+        _self.picker = new mui.DtPicker(options);
+        _self.picker.show(function (rs) {
+          $("#timer_sapn").css({
+            margin: "0"
+          }).html(rs.text)
+          $(this).find("input").val(rs.text)
+          _self.picker.dispose();
+          _self.picker = null;
+        });
+      }
+
+    }, false);
+
+  })(mui, document);
+</script>
+
+</html>
