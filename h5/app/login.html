@@ -61,7 +61,7 @@
       outline: none;
     }
 
-    .login-inp a {
+    .login-inp .a_btn {
       display: block;
       width: 100%;
       text-align: center;
@@ -69,16 +69,6 @@
       color: #fff;
       font-size: 16px;
       letter-spacing: 5px;
-    }
-
-    .login-txt {
-      text-align: center;
-      color: #fff;
-    }
-
-    .login-txt a {
-      color: #fff;
-      padding: 0 5px;
     }
   </style>
 </head>
@@ -90,7 +80,7 @@
     <div class="login-form">
       <div class="login-inp"><label>登录</label><input type="text" placeholder=""></div>
       <div class="login-inp"><label>密码</label><input type="password" placeholder=""></div>
-      <div class="login-inp"><a href="#">立即登录</a></div>
+      <div class="login-inp"><button class="a_btn" id="login">立即登录</button></div>
     </div>
 
   </div>
@@ -98,8 +88,11 @@
 
 
 </body>
-<script src="js/mui.min.js"></script>
-<script src="js/public.js"></script>
+<script>
+  login.onclick = function () {
+    location.href = "index.html"
+  }
+</script>
 
 
 </html>
