@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <div id="newsImg1"></div>
+</head>
+
+<body>
+    <script>
+        var ShowCount = 3; //显示数量
+        var i;
+        var str = "";
+        var sImg = new Array();
+        var sLink = new Array();
+
+        sImg[0] = "http://www.aliyun.com/a.jpg";
+        sLink[0] = "https://item.taobao.com";
+
+        function mixArray(source) {
+            //var source=[1,2,3,4,5,6,7,8,9,10];
+            var goal = [];
+            for (var i = 0; i < source.length; i++) {
+                var pos = Math.floor(Math.random() * (source.length - i));
+                goal[i] = source[pos];
+                source[pos] = source[source.length - 1 - i];
+            }
+            return goal;
+        }
+
+        var Ro = new Array();
+        for (var x = 0; x < sImg.length; x++) {
+            Ro[x] = x;
+        }
+        Ro = mixArray(Ro);
+
+
+        for (var j = 0; j < ShowCount; j++) {
+
+            str += "<a href='" + sLink[Ro[j]] + "' target=\"_blank\" ><img src='" + sImg[Ro[j]] + "'  border=0 /></ a>";
+        }
+        document.getElementById("newsImg1").innerHTML = str;
+    </script>
+
+</body>
+
+</html>

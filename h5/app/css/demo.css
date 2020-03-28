@@ -1,0 +1,168 @@
+.logo {
+  padding: 0.13333rem 0 0 0.4rem;
+  width: 100%;
+}
+
+.logo img {
+  width: 2.13333rem;
+  height: 2.13333rem;
+}
+
+.logo h2 {
+  font-size: 0.53333rem;
+  line-height: 0.66667rem;
+  height: 0.66667rem;
+  font-weight: bold;
+}
+
+.warp {
+  padding: 0.26667rem 0;
+}
+
+.warp h3 {
+  text-align: center;
+  font-size: 0.46667rem;
+  line-height: 0.66667rem;
+  font-weight: bold;
+}
+
+.warp h4 {
+  text-align: center;
+  font-size: 0.26667rem;
+  line-height: 0.4rem;
+  color: red;
+}
+
+.warp .encouragement {
+  display: flex;
+  justify-content: space-around;
+  width: 8rem;
+  margin: 0 auto;
+}
+
+.warp .encouragement span {
+  color: red;
+  font-size: 0.4rem;
+  line-height: 0.66667rem;
+}
+
+.warp .from_box {
+  width: 100%;
+  height: auto;
+}
+
+.warp .from_box a {
+  display: block;
+  box-sizing: border-box;
+  margin: 0.26667rem auto 0;
+  width: 8rem;
+  background: #fb5847;
+  color: #fff;
+  text-align: center;
+  font-size: 0.53333rem;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+}
+
+.warp .from_box .sure {
+  width: 8rem;
+  color: #000;
+  font-size: 0.53333rem;
+}
+
+.warp .from_box input, .warp .from_box textarea {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto 0.26667rem;
+  width: 7.33333rem;
+  height: 1.06667rem;
+  font-size: 0.4rem;
+  padding: 0.13333rem 0.4rem;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.warp .from_box label {
+  display: block;
+  margin: 0 auto;
+  width: 7.2rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.4rem;
+  color: #000;
+}
+
+.warp .from_box textarea {
+  height: 2.4rem;
+  line-height: 0.53333rem;
+}
+
+.warp .mui-input-group {
+  width: 8rem;
+  margin: 0 auto;
+  background: none;
+}
+
+.warp .mui-input-group .mui-input-row {
+  margin: 0 0 10px 0;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.warp .mui-input-group .textarea {
+  padding: 10px 20px;
+  height: 100px;
+}
+
+.warp .mui-input-group .mui-radio label {
+  width: 35%;
+}
+
+.warp .mui-input-group .radio_box {
+  float: right;
+  width: 65%;
+  margin-bottom: 0;
+  padding-left: 0;
+  border: 0;
+  display: flex;
+}
+
+.warp .mui-input-group .check_xiaoqu {
+  width: 80%;
+  height: auto;
+  padding-right: 0;
+}
+
+.warp .mui-input-group .xiaoqu {
+  width: 20%;
+}
+
+.show_box {
+  border-radius: 4px;
+  width: 7.73333rem;
+  margin: 0.66667rem auto 0;
+  background: #e5f4e0;
+  height: 9.33333rem;
+}
+
+.show_box h3 {
+  text-align: center;
+  font-size: 0.53333rem;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  color: #b1d56e;
+}
+
+.show_box ul {
+  padding: 0 0.26667rem;
+}
+
+.show_box ul li {
+  margin: 0.26667rem 0;
+  padding: 0 0.13333rem;
+  font-size: 0.4rem;
+  line-height: 0.6rem;
+  color: #b1d56e;
+  background: #b2d16c;
+  color: #fff;
+}

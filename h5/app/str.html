@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>str</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<a href=""><img src="" alt=""></a>
+
+<body>
+    <script>
+        // var sLink1 = ["1", "2", "3", "4"]
+
+
+        var data = [{
+            imgSrc: "img/temp/img1_1.jpg",
+            aUrl: "https://www.baidu.com",
+        }, {
+            imgSrc: "img/temp/img1_2.jpg",
+            aUrl: "https://www.baidu.com",
+        }, {
+            imgSrc: "img/temp/img1_3.jpg",
+            aUrl: "https://www.baidu.com",
+        }, {
+            imgSrc: "img/temp/img1_4.jpg",
+            aUrl: "https://www.baidu.com",
+        }]
+
+        console.log(Math.round(Math.random() * 4));
+        var item = Math.round(Math.random() * 4)
+            // 随机删除数组中的一个
+        data.splice(item, 1)
+        console.log(data)
+        var str = "";
+        for (var i = 0; i < data.length; i++) {
+            // str += `
+            // <a href="${data[i].imgSrc}"  class="red">${data[i].imgSrc}</a>
+            // <img src="${data[i].imgSrc}"  border=0 />
+            // `;
+            str += "<a href=" + data[i].imgSrc + " class='red' >" +
+                "<img src=" + data[i].aUrl + "  border=0 />" +
+                " </a>"
+
+        }
+        document.write(str)
+    </script>
+</body>
+
+</html>

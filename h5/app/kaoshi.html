@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>答题项目 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/rem.css">
+    <link rel="stylesheet" href="css/kaoshi.css?version=1.1.2">
+
+    <script src="js/remScale.js"></script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, #0d6baf 0%, #0089d1 100%), linear-gradient(#0089d1, #0089d1);
+            background-blend-mode: normal, normal;
+            overflow-x: hidden;
+        }
+        
+        [contenteditable="true"],
+        input,
+        textarea {
+            -webkit-user-select: auto!important;
+            -khtml-user-select: auto!important;
+            -moz-user-select: auto!important;
+            -ms-user-select: auto!important;
+            -o-user-select: auto!important;
+            user-select: auto!important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h3>
+            某某某答题
+        </h3>
+    </div>
+    <div class="warp">
+        <form class="mui-input-group ">
+            <h3>
+                一、 单选题（10个）
+            </h3>
+            <div class="item_box">
+                <h4>
+                    1、这里是选择题题目自行更改（单选）这是一个很长很长的题目 这里是选择题题目自行更改（单选）这是一个很长很长的题目 这里是选择题题目自行更改（单选）这是一个很长很长的题目
+                </h4>
+                <div class="mui-input-row mui-radio mui-left">
+                    <label>答案： A 这是一个很长很长的答案这是一个很长很长的答案这是一个很长很长的答案这是一个很长很长的答案这
+                        是一个很长很长的答案这是一个很长很长的
+                        答案这是一个很长很长的答案这是一个很长很长的答案这是一个很长很长的答案</label>
+                    <input name="radio1" type="radio">
+                </div>
+                <div class="mui-input-row mui-radio mui-left">
+                    <label>答案： B答案这是一个很长很长的答案这是一个很长很
+                        长的答案这是一个很长很长的答案答案这是一个很长很长的答案这是一个很长很长的答案这是一个很长很长的答案答案这是一个很长很长的答案这是一个很长很长的答案这
+                        是一个很长很长的答案答案这是一个很长很长的答案这是一个很长很长的答案这是一个很长很长的答案</label>
+                    <input name="radio1" type="radio" checked>
+                </div>
+
+            </div>
+            <div class="item_box">
+                <h4>
+                    2、这里是选择题题目自行更改（单选）
+                </h4>
+                <div class="mui-input-row mui-radio mui-left">
+                    <label>答案： 正确</label>
+                    <input name="radio2" type="radio">
+                </div>
+                <div class="mui-input-row mui-radio mui-left">
+                    <label>答案： 错误</label>
+                    <input name="radio2" type="radio" checked>
+                </div>
+            </div>
+            <h3>
+                二、 多选题（10个）
+            </h3>
+            <div class="item_box">
+                <h4>
+                    3、这里是选择题题目自行更改（可多选）
+                </h4>
+                <div class="mui-input-row mui-checkbox mui-left">
+                    <label>选项A</label>
+                    <input name="checkbox" value="Item 1" type="checkbox">
+                </div>
+                <div class="mui-input-row mui-checkbox mui-left">
+                    <label>选项B</label>
+                    <input name="checkbox" value="Item 2" type="checkbox" checked>
+                </div>
+                <div class="mui-input-row mui-checkbox mui-left">
+                    <label>选项C</label>
+                    <input name="checkbox" value="Item 2" type="checkbox" checked>
+                </div>
+
+            </div>
+            <div class="item_box">
+                <h4>
+                    4、这里是选择题题目自行更改（可多选）
+                </h4>
+                <div class="mui-input-row mui-checkbox mui-left">
+                    <label>选项A</label>
+                    <input name="checkbox" value="Item 1" type="checkbox">
+                </div>
+                <div class="mui-input-row mui-checkbox mui-left">
+                    <label>选项B</label>
+                    <input name="checkbox" value="Item 2" type="checkbox" checked>
+                </div>
+                <div class="mui-input-row mui-checkbox mui-left">
+                    <label>选项C</label>
+                    <input name="checkbox" value="Item 2" type="checkbox" checked>
+                </div>
+
+            </div>
+            <!-- 倒计时 -->
+            <div class="time_box">
+                <button class="commit" id="commit">
+                    立即交卷
+              </button>
+                <input type="button" class="commit" value="立即交卷"> -->
+            </div>
+        </form>
+        <div id="show_time" class="show_time">
+            <!-- 距离答题结束还有 <span>10</span>时 <span>20</span>分 <span>222</span> 秒 -->
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="js/mui.min.js"></script>
+<script>
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    mui('.mui-input-group').on('change', 'input', function() {
+        //  这是取值方法
+        //  var value = this.checked ? "true" : "false";
+        //this.previousElementSibling.innerText = "checked：" + value;
+    });
+
+    //  倒计时
+
+    var maxtime = 60 * 60; //一个小时，按秒计算，自己调整!   
+    function CountDown() {
+        if (maxtime >= 0) {
+            hours = Math.floor(maxtime / 3600);
+            minutes = toTwo(Math.floor(maxtime / 60))
+            seconds = toTwo(Math.floor(maxtime % 60))
+            msg = `
+            距离答题结束还有 <span>${hours}</span>时 <span>${minutes}</span>分 <span>${seconds}</span> 秒
+            `;
+            //  msg = "距离答题结束还有" + hours + "时" + toTwo(minutes) + "分" + toTwo(seconds) + "秒";
+            document.getElementById("show_time").innerHTML = msg;
+            if (maxtime == 5 * 60) alert("还剩5分钟");
+            --maxtime;
+        } else {
+            clearInterval(timer);
+            alert("时间到，结束!");
+        }
+    }
+    timer = setInterval(CountDown, 1000);
+    //  格式化日式 0 
+    function toTwo(date) {
+        return date < 10 ? "0" + date : date;
+    }
+</script>
+
+</html>

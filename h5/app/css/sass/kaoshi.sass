@@ -1,0 +1,73 @@
+//  rem 计算方法
+@function rem($px)
+    $rem: 75px
+    @return ($px / $rem)+rem
+
+.header
+    h3
+        font-size:  rem(40px)
+        line-height:  rem(80px)
+        height: rem(80px)
+        font-weight: bold
+        text-align: center
+
+
+.warp
+    padding: 0 0 rem(20px)  
+    height: 100%
+    border: none
+    .mui-input-group
+        padding: 0 0 rem(80px)
+        background: none
+        border: none
+        h3
+            padding: 0 0 0 rem(20px)
+            font-size:  rem(30px)
+            line-height:  rem(50px)
+            height: rem(50px)
+            color: red
+
+        .item_box
+            width: rem(680px)
+            margin: 0 auto rem(20px) 
+            border-radius: rem(8px)
+            background: #fff
+            h4
+                padding: 0 0 0 rem(10px)
+                font-size:  rem(30px)
+                line-height:  rem(60px)
+            .mui-input-row
+                overflow: inherit
+                height:  auto
+                label
+                    line-height: rem(33px)
+                
+            
+        .commit
+            display: block
+            margin: 0 auto rem(20px)
+            width: rem(680px)
+            font-size:  rem(40px)
+            line-height:  rem(80px)
+            height: rem(80px)
+            border-radius: rem(8px)
+            text-align: center
+            background: #fff
+    .show_time
+        position: fixed
+        width: 100%
+        bottom: 0
+        left: 0
+        right: 0
+        font-size:  rem(40px)
+        line-height:  rem(80px)
+        height: rem(80px)
+        text-align: center
+        background: #fff
+        border-top: 1px solid #000
+        span
+            color: red
+ 
+
+
+

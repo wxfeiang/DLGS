@@ -1,0 +1,79 @@
+.header h3 {
+  font-size: 0.53333rem;
+  line-height: 1.06667rem;
+  height: 1.06667rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.warp {
+  padding: 0 0 0.26667rem;
+  height: 100%;
+  border: none;
+}
+
+.warp .mui-input-group {
+  padding: 0 0 1.06667rem;
+  background: none;
+  border: none;
+}
+
+.warp .mui-input-group h3 {
+  padding: 0 0 0 0.26667rem;
+  font-size: 0.4rem;
+  line-height: 0.66667rem;
+  height: 0.66667rem;
+  color: red;
+}
+
+.warp .mui-input-group .item_box {
+  width: 9.06667rem;
+  margin: 0 auto 0.26667rem;
+  border-radius: 0.10667rem;
+  background: #fff;
+}
+
+.warp .mui-input-group .item_box h4 {
+  padding: 0 0 0 0.13333rem;
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+}
+
+.warp .mui-input-group .item_box .mui-input-row {
+  overflow: inherit;
+  height: auto;
+}
+
+.warp .mui-input-group .item_box .mui-input-row label {
+  line-height: 0.44rem;
+}
+
+.warp .mui-input-group .commit {
+  display: block;
+  margin: 0 auto 0.26667rem;
+  width: 9.06667rem;
+  font-size: 0.53333rem;
+  line-height: 1.06667rem;
+  height: 1.06667rem;
+  border-radius: 0.10667rem;
+  text-align: center;
+  background: #fff;
+}
+
+.warp .show_time {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.53333rem;
+  line-height: 1.06667rem;
+  height: 1.06667rem;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #000;
+}
+
+.warp .show_time span {
+  color: red;
+}

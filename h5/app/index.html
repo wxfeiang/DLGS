@@ -2,190 +2,187 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>首页</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="stylesheet" href="css/mui.min.css">
-  <link rel="stylesheet" href="css/iconfont.css" />
-  <link rel="stylesheet" href="css/rest.css">
-  <link rel="stylesheet" href="css/public.css">
-  <script src="js/remScale.js"></script>
+    <meta charset="UTF-8">
+    <title>员工轨迹</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/rem.css">
+    <link rel="stylesheet" href="css/demo.css?version=1.1.2">
+
+    <script src="js/remScale.js"></script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            /* height: 100%; */
+            background-image: linear-gradient(0deg, #0d6baf 0%, #0089d1 100%), linear-gradient(#0089d1, #0089d1);
+            background-blend-mode: normal, normal;
+            overflow-x: hidden;
+        }
+        
+        [contenteditable="true"],
+        input,
+        textarea {
+            -webkit-user-select: auto!important;
+            -khtml-user-select: auto!important;
+            -moz-user-select: auto!important;
+            -ms-user-select: auto!important;
+            -o-user-select: auto!important;
+            user-select: auto!important;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- header -->
-  <header class="mui-bar mui-bar-nav dis-tit">
-    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-    <h1 class="mui-title">首页</h1>
-  </header>
-  <!-- header end-->
-  <!-- contant -->
-  <div class="mui-content">
-    <!-- qiehuan  -->
-    <div class="tab_a">
-      <a href="index.html" class="active">
-        待办事项（356）
-      </a>
-      <a href="index2.html">
-        已办事项
-      </a>
+    <div class="logo">
+        <img src="images/logo.png" alt="logo">
+        <h2>甘肃建投一建集团</h2>
     </div>
-    <div id="pullrefresh" class="mui-scroll-wrapper tab_conts">
+    <div class="warp">
+        <h3>疫情防控人员信息摸排备案登记表</h3>
+        <h4>
+            本表只适用于甘肃第一建设集团在岗职工（含外聘人员）信息摸排备案，为了大家的健康，请如实填写一下信息，不能隐瞒。每天14:00-16:00间填写
+        </h4>
+        <div class="encouragement">
+            <span>武汉加油！</span>
+            <span>中国加油！</span>
+        </div>
+        <form class="mui-input-group">
 
-      <div class="mui-scroll">
-        <!-- 实际滚动区域内容 -->
-        <div class="list_box">
-          <div class="list_item">
-
-            <div class="l_left">
-              <img src="images/people.png" alt="">
+            <div class="mui-input-row">
+                <label>姓名</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入真实姓名">
             </div>
-            <div class="l_right">
-              <h3>
-                张三丰的策划申请
-                <span>
-                  2019-10-7
-                </span>
-              </h3>
-              <div class="l_conts">
-                错那110千伏变电工程
-              </div>
-              <p>
-                计划开始时间：2019-10-10
-              </p>
-              <p>
-                计划结束时间：2019-10-10
-              </p>
-              <a href="" class="status">
-                待审批
-              </a>
+            <div class="mui-input-row">
+                <label>联系电话</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入联系电话">
             </div>
-
-          </div>
-          <div class="list_item">
-
-            <div class="l_left">
-              <img src="images/people.png" alt="">
+            <div class="mui-input-row">
+                <label>所在单位</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入所在单位">
             </div>
-            <div class="l_right">
-              <h3>
-                张三丰的策划申请
-                <span>
-                  2019-10-7
-                </span>
-              </h3>
-              <div class="l_conts">
-                错那110千伏变电工程
-              </div>
-              <p>
-                计划开始时间：2019-10-10
-              </p>
-              <p>
-                计划结束时间：2019-10-10
-              </p>
-              <a href="" class="success">
-                一通过
-              </a>
+            <div class="mui-input-row">
+                <label>项目</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入项目、场、站、点">
+            </div>
+            <div class="mui-input-row">
+                <label>身份证</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入身份证号">
+            </div>
+            <div class="mui-input-row">
+                <label>所在地</label>
+                <input type="text" class="mui-input-clear" placeholder="请输入当前所在地">
+            </div>
+            <div class="mui-input-row">
+                <label>所在地</label>
+                <!-- <input type="text" class="mui-input-clear" placeholder="请输入当前所在地"> -->
+                <select name="" id="" placeholder="请输入当前所在地">
+                    <option value="sss">请输入当前所在地</option>
+                    <option value="sss">wwwwwdddddddddd</option>
+                    <option value="sss">wwwww</option>
+                    <option value="sss">wwwww</option>
+                    <option value="sss">wwwww</option>
+                </select>
+            </div>
+            <div class="mui-input-row textarea">
+                <textarea id="textarea1" rows="5" placeholder="简单描述去了那些地方!!!"></textarea>
             </div>
 
-          </div>
-          <div class="list_item">
 
-            <div class="l_left">
-              <img src="images/people.png" alt="">
-            </div>
-            <div class="l_right">
-              <h3>
-                张三丰的策划申请
-                <span>
-                  2019-10-7
-                </span>
-              </h3>
-              <div class="l_conts">
-                错那110千伏变电工程
-              </div>
-              <p>
-                计划开始时间：2019-10-10
-              </p>
-              <p>
-                计划结束时间：2019-10-10
-              </p>
-              <a href="" class="error">
-                已退回
-              </a>
-            </div>
 
-          </div>
-          <div class="list_item">
+            <div class="mui-input-row ">
+                <label>
+                    是否外出
+                </label>
+                <div class="radio_box">
+                    <div class="mui-input-row mui-radio">
+                        <label>是</label>
+                        <input name="radio1" type="radio">
+                    </div>
+                    <div class="mui-input-row mui-radio">
+                        <label>否</label>
+                        <input name="radio1" type="radio">
+                    </div>
+                </div>
 
-            <div class="l_left">
-              <img src="images/people.png" alt="">
             </div>
-            <div class="l_right">
-              <h3>
-                张三丰的策划申请
-                <span>
-                  2019-10-7
-                </span>
-              </h3>
-              <div class="l_conts">
-                错那110千伏变电工程
-              </div>
-              <p>
-                计划开始时间：2019-10-10
-              </p>
-              <p>
-                计划结束时间：2019-10-10
-              </p>
-              <a href="" class="error">
-                已退回
-              </a>
+            <div class="mui-input-row ">
+                <label class="xiaoqu ">
+                    小区
+                </label>
+                <input type="text" class="mui-input-clear" placeholder="请至少选择一项！！！" disabled>
+                <!-- <div class="radio_box check_xiaoqu">
+                    <div class="mui-input-row mui-checkbox">
+                        <label>发烧</label>
+                        <input name="checkbox1" value="Item 3" type="checkbox">
+                    </div>
+                    <div class="mui-input-row mui-checkbox">
+                        <label>感冒咳嗽</label>
+                        <input name="checkbox1" value="Item 4" type="checkbox">
+                    </div>
+                    <div class="mui-input-row mui-checkbox">
+                        <label>无以上症状</label>
+                        <input name="checkbox1" value="Item 5" type="checkbox">
+                    </div>
+                </div> -->
             </div>
 
-          </div>
+            <div class="mui-input-row mui-checkbox">
+                <label>发烧</label>
+                <input name="checkbox1" value="Item 3" type="checkbox">
+            </div>
+            <div class="mui-input-row mui-checkbox">
+                <label>感冒咳嗽</label>
+                <input name="checkbox1" value="Item 4" type="checkbox">
+            </div>
+            <div class="mui-input-row mui-checkbox">
+                <label>无以上症状</label>
+                <input name="checkbox1" value="Item 5" type="checkbox">
+            </div>
+
+            <div class="mui-input-row textarea">
+                <textarea id="textarea" rows="5" placeholder="乘坐交通工具情况（火车，公交车，航班等重要信息）"></textarea>
+            </div>
 
 
+
+
+        </form>
+        <div class="from_box">
+            <!-- <label for="">姓名</label>
+            <input type="text" placeholder="姓名">
+            <input type="text" placeholder="联系电话">
+            <input type="text" placeholder="所在单位（机关或项目）">
+            <input type="text" placeholder="目前所在地（*省*市）">
+            <input type="text" placeholder="计划前往城市1">
+            <input type="text" placeholder="计划前往城市2">
+            <textarea name="" id="" rows="13" placeholder="乘坐交通工具情况"></textarea> -->
+            <input type="button" value="提交" class="sure">
+            <a href="">全国疫情实时情况（点击）</a>
         </div>
 
-
-
-      </div>
     </div>
-
-
-
-
-
-
-  </div>
-  <!-- contant  end -->
-  <!-- footer -->
-  <nav class="mui-bar mui-bar-tab foot-nav dy-bar">
-    <a class="mui-tab-item mui-active">
-      <span class="mui-icon  iconfont icon-yemian"></span>
-      <span class="mui-tab-label span2">首页</span>
-    </a>
-    <a class="mui-tab-item" href="object.html">
-      <span class="mui-icon  iconfont icon-fenlei2-copy"></span>
-      <span class="mui-tab-label span2">项目</span>
-    </a>
-    <a class="mui-tab-item ">
-      <span class="mui-icon  iconfont icon-wodedangxuan1-copy"></span>
-      <span class="mui-tab-label span2">我的</span>
-    </a>
-
-  </nav>
-  <!-- footer  end-->
-
-
 
 
 </body>
 <script src="js/mui.min.js"></script>
-<script src="js/public.js"></script>
-
+<script>
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    mui('.mui-input-group').on('change', 'input', function() {
+        //  这是取值方法
+        //  var value = this.checked ? "true" : "false";
+        //this.previousElementSibling.innerText = "checked：" + value;
+    });
+</script>
 
 </html>
