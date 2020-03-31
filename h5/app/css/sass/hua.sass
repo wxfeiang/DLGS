@@ -1,0 +1,57 @@
+//  rem 计算方法
+@function rem($px)
+    $rem: 75px
+    @return ($px / $rem)+rem
+.icon 
+    width: 1em
+    height: 1em
+    vertical-align: -0.15em
+    fill: currentColor
+    overflow: hidden
+.top_box
+    padding: rem(50px) 0
+    background: #fff
+    img
+        display: block
+        margin:  0 auto
+        width: rem(320px)
+        height: rem(320px)
+        border-radius: 4px
+    h3
+        font-size: rem(52px)
+        line-height: rem(100px)
+        text-align: center
+    h4
+        font-size: rem(30px)
+        line-height: rem(50px)
+        text-align: center
+        color: #666
+.dy_card
+    margin: 0 0 rem(20px) 0
+    padding: 0 rem(20px) 
+    background: #ffffff
+    .text_title
+        color: #000000
+        font-weight: bold
+        font-size: rem(40px)
+        line-height: rem(80px)
+    .text_conter
+        font-size: rem(30px)
+    .items_ul
+        li
+            display: flex
+            justify-content: space-between
+            padding: rem(30px) 0
+            border-bottom:  1px solid #cccccc
+            font-size: rem(36px)
+            line-height: rem(60px)
+            color: #666
+            min-height: rem(10px)
+            .right_dex
+                color: #333
+                text-align: right
+                max-width: rem(500px)
+            .yinwen
+                font-style: italic
+
+    

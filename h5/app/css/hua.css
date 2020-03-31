@@ -1,0 +1,71 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.top_box {
+  padding: 0.66667rem 0;
+  background: #fff;
+}
+
+.top_box img {
+  display: block;
+  margin: 0 auto;
+  width: 4.26667rem;
+  height: 4.26667rem;
+  border-radius: 4px;
+}
+
+.top_box h3 {
+  font-size: 0.69333rem;
+  line-height: 1.33333rem;
+  text-align: center;
+}
+
+.top_box h4 {
+  font-size: 0.4rem;
+  line-height: 0.66667rem;
+  text-align: center;
+  color: #666;
+}
+
+.dy_card {
+  margin: 0 0 0.26667rem 0;
+  padding: 0 0.26667rem;
+  background: #ffffff;
+}
+
+.dy_card .text_title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.53333rem;
+  line-height: 1.06667rem;
+}
+
+.dy_card .text_conter {
+  font-size: 0.4rem;
+}
+
+.dy_card .items_ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #cccccc;
+  font-size: 0.48rem;
+  line-height: 0.8rem;
+  color: #666;
+  min-height: 0.13333rem;
+}
+
+.dy_card .items_ul li .right_dex {
+  color: #333;
+  text-align: right;
+  max-width: 6.66667rem;
+}
+
+.dy_card .items_ul li .yinwen {
+  font-style: italic;
+}
