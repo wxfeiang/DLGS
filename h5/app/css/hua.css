@@ -34,7 +34,7 @@
 
 .dy_card {
   margin: 0 0 0.26667rem 0;
-  padding: 0 0.26667rem;
+  padding: 0.13333rem 0.26667rem 0.26667rem;
   background: #ffffff;
 }
 
@@ -46,7 +46,8 @@
 }
 
 .dy_card .text_conter {
-  font-size: 0.4rem;
+  font-size: 0.48rem;
+  line-height: 0.8rem;
 }
 
 .dy_card .items_ul li {
