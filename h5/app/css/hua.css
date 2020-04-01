@@ -70,3 +70,17 @@
 .dy_card .items_ul li .yinwen {
   font-style: italic;
 }
+
+.img_scrol {
+  height: 2.66667rem !important;
+  margin: 0 0 0.26667rem 0;
+}
+
+.img_scrol a {
+  display: inline-block;
+}
+
+.img_list {
+  width: 3.73333rem;
+  height: 2.66667rem;
+}
