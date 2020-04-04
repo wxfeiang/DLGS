@@ -34,3 +34,20 @@
   letter-spacing: 2.4px;
   color: #fff;
 }
+
+.ce_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ce_box .d1 {
+  width: 50%;
+  height: 44px;
+  background: #000000;
+}
+
+.ce_box .d2 {
+  width: 50%;
+  height: 1.17333rem;
+  background: red;
+}
