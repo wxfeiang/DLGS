@@ -1,0 +1,67 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.top_box {
+  padding: 0.66667rem 0 0.26667rem;
+  background: #fff;
+}
+
+.top_box img {
+  display: block;
+  margin: 0 auto;
+  width: 7.33333rem;
+  height: 6.13333rem;
+  border-radius: 4px;
+}
+
+.top_box h3 {
+  font-size: 0.61333rem;
+  line-height: 1.33333rem;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.top_box h4 {
+  font-size: 0.4rem;
+  line-height: 0.66667rem;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.top_box .tit_desic {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_box .tit_desic .dec_item {
+  text-align: center;
+  width: 50%;
+  font-size: 0.4rem;
+  line-height: 0.66667rem;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.dy_card1 {
+  padding: 0rem 0.26667rem 0.26667rem;
+  background: #ffffff;
+}
+
+.dy_card1 .li_list {
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.dy_card1 .li_list span {
+  margin-right: ren(10px);
+}
